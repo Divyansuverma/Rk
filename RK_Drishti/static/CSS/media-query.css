@@ -1,0 +1,313 @@
+@media screen and (max-width:991px) {
+    .main-nav {
+        overflow: initial;
+    }
+
+    .nav-link {
+        position: absolute;
+        background-color: #192284;
+        border-radius: 20px;
+        top: -1000%;
+        left: 0%;
+        width: 30%;
+        padding-block: 20px;
+        transition: 0.7s ease-in-out;
+
+    }
+
+    .nav-link.active {
+        top: 100%;
+        transition: 0.7s ease-in-out;
+    }
+
+    .nav-link ul {
+        flex-direction: column;
+    }
+
+    .icons {
+        display: block;
+        margin-right: 20px;
+    }
+
+    .toper-box {
+        justify-content: space-between;
+    }
+
+    .stu-box {
+        width: 22%;
+    }
+
+    .stu-box img {
+        width: 100%;
+        height: 250px;
+    }
+
+    .stu-box p {
+        font-size: 1rem;
+    }
+
+    .contact-form {
+        width: 90%;
+        height: 72vh;
+    }
+
+    .submit-btn {
+        width: 41.5rem;
+        height: 4.5rem;
+    }
+}
+
+@media screen and (max-width:767px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .whatsapp-logo{
+        width: 20%;
+        position: fixed;
+        top: 67%;
+        left: 80%;
+        right: 1.5%;
+        cursor: pointer;
+    }
+
+    .leftmain {
+        width: 80%;
+    }
+
+    .leftmain h2 {
+        font-size: 2.5rem;
+    }
+
+    .leftmain h2 span {
+        font-size: 4.5rem;
+    }
+
+    .leftmain button {
+        align-items: center;
+        margin: 4% 35%;
+    }
+
+    .rightmain {
+        /* margin-top: 10%; */
+        max-width: 100%;
+        height: 10%;
+    }
+
+    .rightmain img {
+        width: 250px;
+        height: 300px;
+    }
+
+    .text {
+        width: 300px;
+    }
+
+    #service-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10%
+    }
+
+    .box {
+        margin-top: 10%;
+        width: 90%;
+    }
+
+    .stu-box {
+        margin-top: 5%;
+        width: 45%;
+    }
+
+    .stu-box img {
+        width: 100%;
+    }
+
+    .stu-box p {
+        font-size: 1.4rem;
+    }
+
+    .All-btn {
+        align-items: center;
+        margin-top: 5%;
+        width: 50%;
+        height: 50px;
+    }
+
+    .image-boxes {
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+        grid-template-columns: 169px 169px;
+    }
+
+    .image-box {
+        text-align: center;
+        background-color: #f6f1f1;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 5%;
+        margin-bottom: 60px;
+        height: 51vh;
+        width: 128%;
+    }
+
+    .contact {
+        background-color: #fff;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+
+    .us {
+        font-size: 1.8rem;
+        margin: 0% auto;
+        border: none;
+        background-color: #f6f1f1;
+    }
+
+    .field {
+        width: 35rem;
+        padding: 1rem 0rem;
+    }
+
+    .submit-btn {
+        width: 93%;
+    }
+    .All-btn{
+        margin: 10% 25%;
+    }
+}
+
+@media screen and (max-width:479px) {
+    .nav-link {
+        width: 70%;
+    }
+
+    .logo img {
+        width: 90px;
+        margin: 5px;
+        height: 80px;
+    }
+    
+    .leftmain {
+        width: 100%;
+    }
+    .leftmain h2 {
+        font-size: 3rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .leftmain h2 span {
+        font-size: 5rem;
+    }
+
+    .leftmain p {
+        font-size: 1.5rem;
+    }
+
+    .leftmain button {
+        align-items: center;
+        margin: 10% 5%;
+        font-size: 2rem;
+        width: 90%;
+    }
+
+    .rightmain {
+        width: 100%;
+    }
+
+    .whatsapp-logo {
+        width: 20%;
+        position: fixed;
+        top: 87%;
+        left: 80%;
+        right: 1.5%;
+        cursor: pointer;
+    }
+
+    .text {
+        width: 100%;
+    }
+
+    .topper h2 {
+        margin-top: 20%;
+        font-size: 2rem;
+    }
+
+    .stu-box {
+        width: 48%;
+    }
+
+    .stu-box img {
+        width: 100%;
+        height: 150px;
+    }
+
+    .stu-box p {
+        font-size: 0.7rem;
+    }
+
+    .notes {
+        margin-top: 20%;
+        font-size: 1.8rem;
+    }
+
+    .All-btn {
+        margin-top: 10%;
+        width: 60%;
+        font-size: 1.2rem;
+    }
+
+    .image-boxes {
+        display: grid;
+        justify-content: space-around;
+        align-items: center;
+        width: 98%;
+        padding: 20px;
+        grid-template-columns: 219px;
+    }
+
+    .image-box {
+        text-align: center;
+        background-color: #f6f1f1;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin-top: 5%;
+        margin-bottom: 60px;
+        height: 51vh;
+    }
+
+    .contact-form {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .us {
+        font-size: 1.5rem;
+    }
+
+    .field {
+        width: 20rem;
+        margin: 0.5rem 0;
+        padding: 0.5rem 0.5rem 0.8rem 0;
+        font-size: 1.2rem;
+    }
+
+    .submit-btn {
+        width: 80%;
+        height: 3rem;
+        border-radius: 30px;
+        font-size: 2rem;
+    }
+
+    .All-btn{
+        margin: 10% 20%;
+    }
+}

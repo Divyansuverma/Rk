@@ -1,0 +1,260 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.navbar {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 2%;
+    align-items: center;
+    border: 2px solid rgb(4, 109, 255);
+    background-color: rgb(128, 255, 0);
+    border-radius: 19px;
+}
+ 
+.logo {
+    height: 40px;
+    margin: 0px 1px;
+}
+
+.logo img {
+    width: 30px;
+    border-radius: 100% 100%;
+    height: 35px;
+    margin: 1px 0px 0px 1px;
+}
+
+.navbar ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0px 2px;
+}
+
+.navbar ul li {
+    list-style: none;
+    font-size: 0.7rem;
+}
+
+.navbar ul li a {
+    display: block;
+    text-decoration: none;
+    padding: 3px 6px;
+    color: black;
+    border-radius: 17px;
+    /* font-weight: bold; */
+}
+
+.navbar ul li a:hover {
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftmain {
+   width: 100%;
+    margin: 28% 0%;
+}
+
+.leftmain h2 span {
+    font-size: 3.1rem;
+    font-weight: 700;
+    color: rgb(83, 25, 137);
+    font-family: cursive;
+    text-decoration: underline;
+    text-shadow: 5px 3px 2px rgb(218, 69, 69);
+    cursor: pointer;
+}
+
+.leftmain h2 {
+    font-weight: 600;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.leftmain p {
+    text-align: center;
+    margin-top: 7%;
+    font-size: 1rem;
+}
+
+.leftmain button {
+    font-size: 1.4rem;
+    background-color: brown;
+    border: none;
+    margin: 4% 30%;
+    padding: 1px 25px;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+.rightmain {
+    margin: 1% 4%;
+    width: 90%;
+    height: 20%;
+    border: 2px solid blueviolet;
+
+}
+
+.rightmain img {
+    /* align-items: center;
+    justify-content: center; */
+    /* position: relative;
+    left: 22%;
+    bottom: 2%; */
+    width: 90%;
+    height: 0%;
+
+}
+
+.text {
+    border: 2px solid green;
+    background-color: #bedfec;
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Section Box  */
+#service-box {
+    display: flex;
+    flex-direction: column;
+    margin: 1px 5%;
+}
+
+.box {
+    /* border: 2px solid blueviolet; */
+    border: none;
+    border-radius: 20px;
+    width: 90%;
+    margin: 10% 2%;
+    text-align: center;
+    background-color: rgb(147, 100, 191);
+    box-shadow: 14px 25px 11px 2px rgb(76, 68, 53);
+}
+
+.box h3 {
+    font-size: 2rem;
+    text-decoration: underline;
+    margin-bottom: 2%;
+    text-shadow: 3px 1px 5px white;
+}
+
+.box p {
+    font-size: 1.2rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+    padding: 7px 15%;
+}
+
+.box p span {
+    color: rgb(199, 26, 26);
+}
+
+
+/* Tooper Section  */
+
+.topper {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.topper h2{
+    text-align: center;
+    margin-top: 3%;
+    font-size: 2.1rem;
+    color: green;
+    text-decoration: underline;
+}
+
+.topper-box{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr;
+    border: 5px solid red;
+    margin: 6% 2%;
+}
+.stu-box{
+    border: 2px solid rgb(39, 122, 130);
+    width: 96%;
+    margin: 3px 1px;
+    height: 200px;
+}
+.stu-box img{
+    width: 100%;
+    height: 60%;;
+}
+.stu-box p{
+    text-align: center;
+    margin-top: 2%;
+    font-size: 10px;
+}
+
+/* Notes */
+.notes{
+    text-align: center;
+    color: blue;
+    margin: 2%;
+    font-size: 2.3rem;
+    text-shadow: 3px 5px 4px rgb(108, 80, 80);
+}
+.All-btn{
+    font-size: 1.4rem;
+    background-color: rgb(213, 125, 125);
+    font-weight: 600;
+    border: none;
+    border-radius: 30px;
+    margin: 7% 18%;
+    width: 57%;
+    padding: 1px 2x;
+    cursor: pointer;
+}
+.All-btn:hover{
+    background-color: black;
+    color: white;
+}
+
+/* Teacher Section  */
+
+.teacher-text{
+    margin-left: 6%;
+    font-size: 2.1rem;
+    text-decoration: underline;
+    margin-bottom: 6%;
+    text-shadow: 2px 5px 5px rgb(93, 147, 124);
+}
+.all-teacher{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+.teacher{
+    border: 2px solid green;
+    width: 92%;
+    margin: 4% 2%;
+    border-radius: 10px;
+}
+.teacher img{
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+}
+.teacher-box{
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+}
+
+.h {
+    margin:10% 5%;
+}
+footer{
+    background-color: rgb(58, 55, 55);
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    margin: 1% 2%;
+}

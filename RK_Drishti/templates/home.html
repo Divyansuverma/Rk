@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" href="../images/title.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Drishti Coaching</title>
+    <link rel="stylesheet" href="{% static "CSS/style.css" %}">
+    <link rel="stylesheet" href="{% static "CSS/media-query.css"%}">
+    <!-- <link rel="stylesheet" media="screen and (max-width:350px)" href="phone.css"> -->
+    <style>
+        @media screen and (max-width:720px){
+        .whatsapp-logo {
+            width: 18%;
+            position: fixed;
+            top: 55%;
+            left: 83%;
+            right: 3.5%;
+            cursor: pointer;
+          }
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="container flex main-nav">
+            <a href="" class="logo">
+                <img src="{% static "img/logo.jpg" %}" alt="Drishti">
+            </a>
+
+            <div class="nav-link" id="nav-link">
+                <ul class="flex">
+                    <li><a href="home" class="hover-link">Home</a></li>
+                    <li><a href="about" target="blank" class="hover-link">About</a></li>
+                    <li><a href="courses" class="hover-link">Courses</a></li>
+                    <li><a href="feedback" class="hover-link">Feedback</a></li>
+                    <li><a href="notes" class="hover-link">Notes</a></li>
+                </ul>
+            </div>
+            <a class="icons hover-link" id="nav-toggle" href="#">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        
+        <div class="leftmain">
+            <h2 class="h-primary">Welcome to <span>Drishti</span> Coaching Center </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur</p>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iusto ipsum, corrupti iure animi,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil corporis quos.</p> -->
+            <button class="btn">Batches</button>
+        </div>
+        <div class="rightmain">
+            <img src="{% static 'img/khan-sir.png'%}" alt="Director-Ramji Sir">
+            <div class="text">
+                <h2>Director by-- R.K. Sony</h2>
+                <p>I have completed B.A</p>
+                <p>yet now prepration UPSC</p>
+                <p>English Speaker</p>
+                <p>i am singer.</p>
+            </div>
+        </div>
+    </main>
+    <div class="whatsapp-logo">
+        <a href="https://wa.me/917282053985"><img src="{% static 'img/whatsApp.png'%}" alt="whatsapp"></a>
+    </div>
+
+    <section>
+        <div id="service-box">
+            <div class="box">
+                <img src="" alt="">
+                <h3>For Arts.</h3>
+                <p class="Arts-box"> Hindi, English, History, Geography, Plitics, Economics, Psychology, Home-Science,
+                    Sociology with <span class="box-span">"English Spoken"</span></p>
+            </div>
+
+            <div class="box">
+                <img src="" alt="">
+                <h3>For Science.</h3>
+                <p class="Arts-box">Math, Physics, Chemistry, Biology, English, Hindi, with <span
+                        class="box-span">"English Spoken"</span> </p>
+            </div>
+
+            <div class="box">
+                <img src="" alt="">
+                <h3>For 1st to 10th.</h3>
+                <p class="Arts3"> Hindi , English , and All Subject with <span class="box-span"> "English Spoken"</span>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- <div class="topper">
+        <h2>Our Toppers: </h2>
+        <div class="topper-box">
+            <div class="stu-box">
+                <img src="img/Snapchat-1394711775.jpg" alt="student">
+                <p>Name: Guddu Kumar.
+                    Roll Number: 54017.
+                    Roll code: 2200054.
+                    Marks: 420.
+                </p>
+            </div>
+            <div class="stu-box">
+                <img src="img/Snapchat-1394711775.jpg" alt="student">
+                <p>Name: Guddu Kumar.
+                    Roll Number: 54017.
+                    Roll code: 2200054.
+                    Marks: 420.
+                </p>
+            </div>
+            <div class="stu-box">
+                <img src="img/Snapchat-1394711775.jpg" alt="student">
+                <p>Name: Guddu Kumar.
+                    Roll Number: 54017.
+                    Roll code: 2200054.
+                    Marks: 420.
+                </p>
+            </div>
+            <div class="stu-box">
+                <img src="img/Snapchat-1394711775.jpg" alt="student">
+                <p>Name: Guddu Kumar.
+                    Roll Number: 54017.
+                    Roll code: 2200054.
+                    Marks: 420.
+                </p>
+            </div>
+        </div>
+    </div> -->
+
+
+    <div class="image-boxes">
+        <div class="image-box">
+            <img src="{%static 'img/logo.jpg'%}" alt="Image 1">
+            <p>Name: Guddu Kumar.<br>
+                Roll Number: 54017.<br>
+                Roll code: 2200054.<br>
+                Marks: 420.</p>
+        </div>
+        <div class="image-box">
+            <img src="{%static 'img/logo.jpg'%}" alt="Image 2">
+            <p>Name: Guddu Kumar.<br>
+                Roll Number: 54017.<br>
+                Roll code: 2200054.<br>
+                Marks: 420.</p>
+        </div>
+        <div class="image-box">
+            <img src="{%static 'img/logo.jpg'%}" alt="Image 3">
+            <p>Name: Guddu Kumar.<br>
+                Roll Number: 54017.<br>
+                Roll code: 2200054.<br>
+                Marks: 420.</p>
+        </div>
+        <div class="image-box">
+            <img src="{%static 'img/logo.jpg'%}" alt="Image 3">
+            <p>Name: Guddu Kumar.<br>
+                Roll Number: 54017.<br>
+                Roll code: 2200054.<br>
+                Marks: 420.</p>
+        </div>
+    </div>
+
+    <section id="Notes">
+        <h2 class="notes">___NOTES___</h2>
+        <div id="service-box">
+            <div class="box">
+                <img src="" alt="">
+                <h3>For Arts.</h3>
+                <p class="Arts-box"> Hindi, English, History, Geography, Plitics, Economics, Psychology, Home-Science,
+                    Sociology with <span class="box-span">"English Spoken"</span></p>
+            </div>
+
+            <div class="box">
+                <img src="" alt="">
+                <h3>For Science.</h3>
+                <p class="Arts-box">Math, Physics, Chemistry, Biology, English, Hindi, with <span
+                        class="box-span">"English Spoken"</span> </p>
+            </div>
+
+            <div class="box">
+                <img src="" alt="">
+                <h3>For 1st to 10th.</h3>
+                <p class="Arts3"> Hindi , English , and All Subject with <span class="box-span"> "English Spoken"</span>
+                </p>
+            </div>
+        </div>
+        <button class="All-btn"><a href="notes"> ALL NOTES</a></button>
+    </section>
+
+    <!-- teacher -->
+    <div class="image-boxes">
+        <div class="image-box">
+            <img src="{%static 'img/logo.jpg'%}" alt="Image 1">
+            <p>Name: Guddu Kumar.<br>
+                Roll Number: 54017.<br>
+                Roll code: 2200054.<br>
+                Marks: 420.</p>
+        </div>
+        <div class="image-box">
+            <img src="{%static 'img/logo.jpg'%}" alt="Image 2">
+            <p>Name: Guddu Kumar.<br>
+                Roll Number: 54017.<br>
+                Roll code: 2200054.<br>
+                Marks: 420.</p>
+        </div>
+        <div class="image-box">
+            <img src="{%static 'img/logo.jpg'%}" alt="Image 3">
+            <p>Name: Guddu Kumar.<br>
+                Roll Number: 54017.<br>
+                Roll code: 2200054.<br>
+                Marks: 420.</p>
+        </div>
+        <div class="image-box">
+            <img src="{%static 'img/logo.jpg'%}" alt="Image 3">
+            <p>Name: Guddu Kumar.<br>
+                Roll Number: 54017.<br>
+                Roll code: 2200054.<br>
+                Marks: 420.</p>
+        </div>
+    </div>
+    <!-- <div class="teacher">
+                <img src="img/Snapchat-1394711775.jpg" alt="Divyansu verma">
+                <div class="teacher-box">
+                    <h3>Divyansu Verma</h3>
+                    <p>Hello Bro How </p>
+                    <p>Are you what r doing</p>
+                </div>
+            </div> -->
+    <!-- <div class="teacher">
+                <img src="img/Snapchat-1394711775.jpg" alt="Divyansu verma">
+                <div class="teacher-box">
+                    <h3>Divyansu Verma</h3>
+                    <p>Hello Bro How </p>
+                    <p>Are you what r doing</p>
+                </div>
+            </div> -->
+    </div>
+    </section>
+
+    <p class="h">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt consequuntur molestiae blanditiis
+        officia aut explicabo. Veritatis optio perspiciatis dolorem omnis exercitationem praesentium. Cum, eligendi ad
+        accusamus dolore perferendis voluptate ex sequi assumenda velit culpa laboriosam beatae consequatur. Vel totam
+        asperiores porro tenetur minus facilis rerum incidunt quae pariatur illo beatae numquam quaerat hic,
+        consequuntur modi voluptatibus repudiandae aperiam eos recusandae in veritatis molestias tempora. Id, impedit ut
+        vitae quaerat saepe minus repudiandae nostrum? Esse voluptate quos ea nam quitem perferendis.</p>
+
+
+    <section id="Contact" class="contact"> <!--contact from-->
+        <div class="contact-form">
+            <div class="text us">
+                <h1>Contact us</h1>
+            </div>
+            <form action="#">
+                <div class="input-group">
+                    <input type="text" id="Name" placeholder="Full Name" class="field" />
+                </div>
+
+                <div class="input-group">
+                    <input type="email" id="Email" placeholder="Email" class="field" />
+                </div>
+
+                <div class="input-group">
+                    <textarea class="field" id="Msg" placeholder="What's your Problem....."></textarea>
+                </div>
+                <button type="submit" onclick="sendMsg()" class="submit-btn" value="Submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="center">
+            copyright &copy; www.dristicoachingcenter.com. All rights researved!
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/7429dec3bd.js" crossorigin="anonymous"></script>
+    <script>
+        const togglebutton = document.getElementById('nav-toggle')
+        const navlinks = document.getElementById('nav-link')
+
+        togglebutton.addEventListener('click', () => {
+            navlinks.classList.toggle('active');
+        })
+    </script>
+
+    <!-- Masseses -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendMsg() {
+            let name = document.getElementById('Name').value;
+            let email = document.getElementById('Email').value;
+            let msg = document.getElementById('Msg').value;
+
+            let body = "Name: " + name + "<br/> Email: " + email + "<br/> Massage: " + msg;
+
+            Email.send({
+                SecureToken: "f36d6dee-4a06-410d-80f8-bc66ac997e39",
+                To: 'divyansuverma36@gmail.com',
+                From: "kumarkopi746@gmail.com",
+                Subject: "This is the subject",
+                Body: body
+            }).then(
+                message => alert(message)
+            );
+        }
+    </script>
+</body>
+
+</html>

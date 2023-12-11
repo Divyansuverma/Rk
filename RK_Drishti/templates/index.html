@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Da+2:wght@400;500;600;700;800&family=Josefin+Slab:ital,wght@0,400;0,600;1,300;1,400;1,600&family=Muli:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&display=swap"
+        rel="stylesheet" />
+    <link rel="icon" href="../images/title.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&family=Ubuntu:wght@300&display=swap"
+        rel="stylesheet">
+    <title>Welcome</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0% 0.8%;
+
+        }
+
+        .logo {
+            height: 90px;
+            margin: 2px 40px;
+            cursor: pointer;
+        }
+
+        .logo img {
+            width: 85px;
+            border-radius: 100% 100%;
+            height: 70px;
+            margin: 10px;
+        }
+
+        .hover-link {
+            color: black;
+            transition: 0.2s ease-in-out;
+            border-radius: 10px;
+        }
+
+        .hover-link:hover {
+            color: rgb(161, 158, 158);
+            border-radius: 10px;
+            transition: 0.2s ease-in-out;
+        }
+
+        .flex {
+            display: flex;
+            align-items: center;
+        }
+
+        .main-nav {
+            background-color: #0b0336;
+            margin-top: 20px;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .nav-link {
+            flex-basis: 730px;
+            margin: 0% 1%;
+        }
+
+        .nav-link ul {
+            list-style: none;
+            justify-content: end;
+            gap: 40px;
+        }
+
+        .nav-link ul li a {
+            text-decoration: none;
+            font-size: 1.7rem;
+            color: aliceblue;
+            font-family: "Baloo Da 2", serif;
+        }
+
+        .icons i {
+            color: white;
+            font-size: 2rem;
+        }
+
+        .icons {
+            display: none;
+        }
+
+
+        /*main Home */
+        main {
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .leftmain {
+            width: 60%;
+            margin: 7% 7%;
+        }
+
+        .leftmain h2 span {
+            font-size: 5.1rem;
+            font-weight: 800;
+            color: rgb(83, 25, 137);
+            font-family: cursive;
+            text-decoration: underline;
+            text-shadow: 5px 3px 2px rgb(218, 69, 69);
+            cursor: pointer;
+        }
+
+        .leftmain h2 {
+            font-weight: 700;
+            font-size: 3.3rem;
+            text-align: center;
+            font-family: "Baloo Da 2", serif;
+        }
+
+        .leftmain p {
+            text-align: center;
+            margin-top: 6%;
+            font-size: 1.7rem;
+        }
+
+        .btn{
+            font-size: 1.8rem;
+            background-color: rgb(15, 7, 86);
+            border: none;
+            margin: 5% 50%;
+            padding: 1px 25px;
+            border-radius: 30px;
+            cursor: pointer;
+            font-weight: 500;
+            font-family: "Baloo Da 2", serif;
+            transition: 0.7s ease-in-out;
+            color: #f6f1f1;
+        }
+        .btn a{
+            text-decoration: none;
+            color: #f6f1f1;
+        }
+
+        .leftmain button:hover {
+            background-color: rgb(4, 18, 56);
+            transition: 0.7s ease-in-out;
+        }
+
+
+        .rightmain {
+            margin: 1% 1px;
+            width: 35%;
+            height: 20%;
+            /* border: 2px solid blueviolet; */
+
+        }
+
+        .rightmain img {
+            width: 90%;
+            height: 0%;
+
+        }
+
+        .text {
+            border: 2px solid rgb(111, 146, 111);
+            background-color: #bedfec;
+            text-align: center;
+            margin-top: 5px;
+        }
+
+        @media screen and (max-width:991px) {
+            .main-nav {
+                overflow: initial;
+            }
+
+            .nav-link {
+                position: absolute;
+                background-color: #192284;
+                border-radius: 20px;
+                top: -1000%;
+                left: 0%;
+                width: 30%;
+                padding-block: 20px;
+                transition: 0.7s ease-in-out;
+
+            }
+
+            .nav-link.active {
+                top: 100%;
+                transition: 0.7s ease-in-out;
+            }
+
+            .nav-link ul {
+                flex-direction: column;
+            }
+
+            .icons {
+                display: block;
+                margin-right: 20px;
+            }
+        }
+
+        @media screen and (max-width:767px) {
+            main {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .leftmain {
+                width: 80%;
+            }
+
+            .leftmain h2 {
+                font-size: 2.5rem;
+            }
+
+            .leftmain h2 span {
+                font-size: 4.5rem;
+            }
+
+            .leftmain button {
+                align-items: center;
+                margin: 4% 35%;
+            }
+
+            .rightmain {
+                /* margin-top: 10%; */
+                max-width: 100%;
+                height: 10%;
+            }
+
+            .rightmain img {
+                width: 250px;
+                height: 300px;
+            }
+
+            .text {
+                width: 300px;
+            }
+        }
+
+        @media screen and (max-width:479px) {
+            .nav-link {
+                width: 70%;
+            }
+
+            .logo img {
+                width: 90px;
+                margin: 5px;
+                height: 80px;
+            }
+
+            .leftmain {
+                width: 100%;
+            }
+
+            .leftmain h2 {
+                font-size: 3rem;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .leftmain h2 span {
+                font-size: 5rem;
+            }
+
+            .leftmain p {
+                font-size: 1.5rem;
+            }
+
+            .leftmain button {
+                align-items: center;
+                margin: 10% 5%;
+                font-size: 2rem;
+                width: 90%;
+            }
+
+            .rightmain {
+                width: 100%;
+            }
+
+            .text {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    {% load static %}
+    <nav>
+        <div class="container flex main-nav">
+            <a href="/" class="logo">
+                <img src="{% static "img/logo.jpg" %}" alt="Drishti">
+            </a>
+
+            <div class="nav-link" id="nav-link">
+                <ul class="flex">
+                    <li><a href="/" class="hover-link">Home</a></li>
+                    <li><a href="about" target="blank" class="hover-link">About</a></li>
+                    <li><a href="singup" class="hover-link">Sigup</a></li>
+                    <li><a href="login" class="hover-link">Login</a></li>
+                </ul>
+            </div>
+            <a class="icons hover-link" id="nav-toggle" href="#">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </div>
+    </nav>
+
+    <main>
+        <div class="leftmain">
+            <h2 class="h-primary">Welcome to <span>Drishti</span> Coaching Center </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem, ipsum dolor sit amet consectetur</p>
+            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint iusto ipsum, corrupti iure animi,</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil corporis quos.</p> -->
+            <button class="btn"><a href="singup">Register</a></button>
+        </div>
+        <div class="rightmain">
+            <img src="{% static "img/khan-sir.png" %}" alt="Director-Ramji Sir">
+            <div class="text">
+                <h2>Director by-- R.K. Sony</h2>
+                <p>I have completed B.A</p>
+                <p>yet now prepration UPSC</p>
+                <p>English Speaker</p>
+                <p>i am singer.</p>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="https://kit.fontawesome.com/7429dec3bd.js" crossorigin="anonymous"></script>
+    <script>
+        const togglebutton = document.getElementById('nav-toggle')
+        const navlinks = document.getElementById('nav-link')
+
+        togglebutton.addEventListener('click', () => {
+            navlinks.classList.toggle('active');
+        })
+    </script>
+</body>
+
+</html>

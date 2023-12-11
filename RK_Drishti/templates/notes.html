@@ -1,0 +1,80 @@
+{% extends "home_basic.html" %}
+{%comment%}
+{% block link %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+{% endblock link %}
+{% block title %}Notes-For-All-Students{% endblock title %}
+{% block css %}
+    .card{
+        position:absolute;
+        background-color:black;
+    }
+    body {
+        background-color: black;
+        color: white;
+    }
+    .notes-file{
+            background-color: white;
+            color: white;
+    }
+{% endblock css %}
+
+{% block body %}
+    {% comment %} <div class="card main" style="width: 18rem; bg-primary"> 
+        {% for post in file %}
+            {% comment %} <img src="..." class="card-img-top" alt="..."> 
+            <div class=" notes-file card-body my-4 bg-primary " style="border:5px solid green;">
+            <h2 class="card-title">{{post.title}}</h2>
+            <p class="card-text">{{post.disc}}</p>
+            <a href="{{post.file.url}}" download="{{post.file.url}}" class="btn btn-primary">Go Download</a>
+            </div>
+        {% endfor %}
+    </div>
+    {% comment %} {% for post in file %}
+        <h2>{{post.title}}</h2>
+        <h3>{{post.disc}}</h3>
+        <a href="{{post.file.url}}" download="{{post.file.url}}">Download</a>
+        {% endfor %} 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+{% endblock body %} {% endcomment %}
+
+{% block link %}
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+{% endblock link %}
+{% block title %}Notes-For-All-Students{% endblock title %}
+{% block css %}
+    .main {
+        position: absolute;
+        background-color: black;
+    }
+
+    body {
+        background-color: black;
+        color: white;
+    }
+
+    .notes-file {
+        background-color: white;
+        color: black;  /* Adjust text color for better visibility */
+    }
+{% endblock css %}
+
+{% block body %}
+    <div class="card main" style="width: 18rem;">
+        {% for post in file %}
+            <div class="notes-file card-body my-4 bg-primary" style="border: 5px solid green;">
+                <h2 class="card-title">{{ post.title }}</h2>
+                <p class="card-text">{{ post.disc }}</p>
+                <a href="{{ post.file.url }}" download="{{ post.file.url }}" class="btn btn-primary">Go Download</a>
+            </div>
+        {% endfor %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"></script>
+{% endblock body %}

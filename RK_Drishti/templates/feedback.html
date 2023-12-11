@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback - Online Teaching and Coaching</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #007BFF;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .student-image {
+            border-radius: 50%;
+            overflow: hidden;
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            margin-bottom: 20px;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 40px;
+        }
+      .stars {
+    color: #FFC107;
+    margin-bottom: 20px;
+}
+
+.star {
+    display: inline-block;
+    font-size: 1.5em;
+}
+
+.star::before {
+    content: "\2605";
+}
+
+.star-highlighted::before {
+    content: "\2605";
+    color: #FFC107;
+}
+
+.star-dimmed::before {
+    content: "\2606";
+    color: #FFC107;
+}
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+
+        .stars {
+            color: #FFC107;
+            margin-bottom: 20px;
+        }
+        #feedback-form{
+            border: 2px solid green;
+            border-radius: 10px;
+            background-color: #a8a8a8;
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 20px;
+            margin: 20px;
+        }
+        .imge{
+            display: flex;
+            flex-direction: column;
+        }
+        .btn{
+            width: 15%;
+            color: white;
+            background-color: black;
+            font-size: 1.5rem;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.7s;
+        }
+        .btn:hover{
+            border: 1px solid green;
+            color: rgb(138, 138, 138);
+            transition: 0.7s;
+        }
+        #feedback{
+            width: 100%;
+        }
+        @media screen and (max-width:622px){
+            .btn{
+                width: 80%;
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    {% load static %}
+    <div class="container">
+        <h1>Feedback - Online Teaching and Coaching</h1>
+        <p>
+            Our online teaching and coaching platform has received exceptional feedback from our students. 
+            Here are just a few examples of what our students have to say about their experience.
+        </p>
+
+        <div class="row">
+            <div>
+                <img src="{% static "img/logo.jpg" %}" alt="Student 1" class="student-image">
+                <h3>Student 1</h3>
+                <div class="stars">★★★★★</div>
+                <p>“The teachers are highly skilled and experienced, and their dedication to helping students 
+                succeed is evident. I couldn't have asked for a better online teaching and coaching experience.”</p>
+            </div>
+            <div>
+                <img src="{% static "img/logo.jpg" %}" alt="Student 2" class="student-image">
+                <h3>Student 2</h3>
+                <div class="stars">★★★★★</div>
+                <p>“The personalized approach to teaching really made a difference for me. The teachers 
+                truly care about my progress and well-being. This online teaching and coaching experience 
+                has been nothing short of transformative.”</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div>
+                <img src="{% static "img/logo.jpg" %}" alt="Student 3" class="student-image">
+                <h3>Student 3</h3>
+                <div class="stars">★★★★★</div>
+                <p>“I had no idea that online teaching and coaching could be this effective. The lessons 
+                were engaging and informative, and the platform's security ensured my privacy. 
+                Overall, I am very satisfied with my experience.”</p>
+            </div>
+            <div>
+                <img src="{% static "img/logo.jpg" %}" alt="Student 4" class="student-image">
+                <h3>Student 4</h3>
+                <div class="stars">★★★★★</div>
+                <p>“The platform's ease of use and responsiveness were top-notch. The teachers were always 
+                available for assistance and support, which was extremely helpful. This online teaching 
+                and coaching experience was a dream come true.”</p>
+            </div>
+        </div>
+        <form id="feedback-form">
+            <div class="imge">
+            <label for="feedback">Image:</label>
+            <input type="file" name="Image" id="Image"><br>
+            <label for="feedback">Your Feedback:</label>
+            <textarea id="feedback" rows="4" cols="50" required></textarea>
+            </div>
+            <div id="rating">
+                <label for="rating">Rating:</label>
+                <input type="radio" id="star5" name="rating" value="5" required>
+                <label for="star5">★</label>
+                <input type="radio" id="star4" name="rating" value="4">
+                <label for="star4">★</label>
+                <input type="radio" id="star3" name="rating" value="3">
+                <label for="star3">★</label>
+                <input type="radio" id="star2" name="rating" value="2">
+                <label for="star2">★</label>
+                <input type="radio" id="star1" name="rating" value="1">
+                <label for="star1">★</label>
+            </div>
+        
+            <input type="submit" class="btn" value="Submit">
+        </form>
